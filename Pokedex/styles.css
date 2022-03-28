@@ -1,0 +1,102 @@
+:root{                                          /*Variables CSS*/
+    --ball_red: rgb(238, 34, 34);               /*formato de variables en css*/
+    --ball_white: hsl(0, 0%, 100%);
+}
+
+html{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7c1cfff2-db8d-44cd-8a13-cb2a4162fae6/dd2zouo-047f7b3f-b895-43ac-82a4-abb6ca12c52a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdjMWNmZmYyLWRiOGQtNDRjZC04YTEzLWNiMmE0MTYyZmFlNlwvZGQyem91by0wNDdmN2IzZi1iODk1LTQzYWMtODJhNC1hYmI2Y2ExMmM1MmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EFI6YQ0acRLpYHzupMAxV_N4KMcpNWT-_3RJ4TV-4eU);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-image: linear-gradient(red,black, white,black, red);*/
+
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;          /*espacio de alineación horizontal view hieht, toma el tamaño de la pantalla*/
+}
+
+.card{
+    background-color: rgb(184, 184, 241);
+    width: 325px;
+    border-radius: 15px;        /*bordes redondeados*/
+    overflow: hidden;           /*que los elementos que estan dentro respeten los bordes*/
+    box-shadow: 3px 3px  3px rebeccapurple; /*sombra, x,y,degradado, color*/
+}
+.card_header{
+    width: 100%;
+    display: block;     /*Eliminar espacios fantasma entre componentes*/
+}
+.card_body{
+    display: flex;
+    flex-direction: column;         /*orientarlos en columna los elementos dentro del contenedor*/
+    align-items: center;            /*alinear elementos del contenedor en el centro*/
+    border-bottom: 1px solid gray;  /*insertar raya horizontal*/
+}
+
+.card_body_img{
+    width: 45%;
+    height: 150px;
+    border: 6px solid rgba(0, 0, 0, 0.603);     /*Borde de la foto margen con el elemento superior, solido, color*/
+    border-radius: 100%;                /*hacer redondeada la foto*/
+    margin-top: -56px;                  /*subir la foto de su posicicón original*/
+}
+
+.card_name{
+    font-size: 2rem;
+    text-transform: capitalize;   /*Convertir primer letra en mayuscula*/
+}
+.card_name{
+    margin-top: 2.5rem;
+}
+.card_name span{
+    color: rgb(95, 95, 95);
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+.card_body p{
+    margin-top: -5px;
+    font-size: 1.5rem;
+}
+
+.card_footer{
+    display: flex;
+    justify-content: space-around;
+}
+.card_footer h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.card_footer p{
+    text-align: center;
+    letter-spacing: 1px;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon_name{
+    border-radius: 5px;
+}
+.submit{
+    border-radius: 5px;
+}

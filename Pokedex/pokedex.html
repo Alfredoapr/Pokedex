@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/Pokebola.png"> 
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <main class="flex"></main>
+
+    <template id="template_card">
+        <section class="card">
+            <img src="./images/Pokeball.jpg " alt="img header" class="card_header">
+            <div class="card_body">
+                <img src="./images/Perfil.jpg" alt="img Pokemon" class="card_body_img">
+                <h1 class="card_name">Nombre Pokemon
+                    <span>22</span>
+                </h1>
+                <p class="card_description"> Lanza rayos</p>
+            </div>
+            <div class="card_footer">
+                <div class="card-footer-powers">
+                    <h3>Ataque</h3>
+                    <p>Ataque</p>
+                </div>
+                <div class="card-footer-powers">
+                    <h3>Especial</h3>
+                    <p>Especial</p>
+                </div>
+                <div class="card-footer-powers">
+                    <h3>Defense</h3>
+                    <p>Defense</p>
+                </div>
+            </div>
+            <input type="submit" name="submit" id="submit">
+        </section>
+    </template>
+    <div class="inputs">
+        <input type="text" class="pokemon_name" placeholder="pokemon name">
+        <a onclick="extractName();"><input type="submit" class="submit"></a>
+    </div>
+    <script  src="./js/app.js"></script>
+</body>
+</html> 
